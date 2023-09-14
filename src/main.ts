@@ -6,8 +6,6 @@ import * as dotenv from 'dotenv';
 
 dotenv.config();
 
-console.log(process.env.POSTGRES_DATABASE);
-
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
